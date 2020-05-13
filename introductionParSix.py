@@ -11,7 +11,7 @@ if __name__ == '__main__':
     start = time.perf_counter()
 
     with concurrent.futures.ProcessPoolExecutor() as executor:
-        secs =[5,4,3,2,1]
+        secs =[8,7,6,5,4,3,2,1]
         results = executor.map(do_something, secs)
         for result in results:
             print(result)
